@@ -1,0 +1,540 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Fri Oct 11 14:49:10 2019
+# Process ID: 6616
+# Current directory: D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.runs/synth_1
+# Command line: vivado.exe -log uC_8Bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uC_8Bit.tcl
+# Log file: D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.runs/synth_1/uC_8Bit.vds
+# Journal file: D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uC_8Bit.tcl -notrace
+Command: synth_design -top uC_8Bit -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13744 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 472.316 ; gain = 181.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uC_8Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:23]
+	Parameter IDLE bound to: 6'b000000 
+	Parameter FETCH bound to: 6'b000001 
+	Parameter DECODE bound to: 6'b000010 
+	Parameter EXECUTE_NOP bound to: 6'b000011 
+	Parameter EXECUTE_ADD bound to: 6'b000100 
+	Parameter EXECUTE_SUB bound to: 6'b000101 
+	Parameter EXECUTE_NOT bound to: 6'b000110 
+	Parameter EXECUTE_AND bound to: 6'b000111 
+	Parameter EXECUTE_OR bound to: 6'b001000 
+	Parameter EXECUTE_MOV_RD_RS bound to: 6'b001001 
+	Parameter EXECUTE_MUL_START bound to: 6'b001010 
+	Parameter EXECUTE_MUL_WAIT bound to: 6'b001011 
+	Parameter EXECUTE_MUL_DONE bound to: 6'b001100 
+	Parameter EXECUTE_DIV_START bound to: 6'b001101 
+	Parameter EXECUTE_DIV_WAIT bound to: 6'b001110 
+	Parameter EXECUTE_DIV_DONE bound to: 6'b001111 
+	Parameter EXECUTE_MOV_MEM_RS_START bound to: 6'b010000 
+	Parameter EXECUTE_MOV_MEM_RS_DONE bound to: 6'b010001 
+	Parameter EXECUTE_MOV_RD_OP_START bound to: 6'b010010 
+	Parameter EXECUTE_MOV_RD_OP_DONE bound to: 6'b010011 
+	Parameter EXECUTE_MOV_RD_MEM_START bound to: 6'b010100 
+	Parameter EXECUTE_MOV_RD_MEM_DONE bound to: 6'b010101 
+	Parameter EXECUTE_JMP_START bound to: 6'b010110 
+	Parameter EXECUTE_JMP_DONE bound to: 6'b010111 
+	Parameter EXECUTE_JNZ_START bound to: 6'b011000 
+	Parameter EXECUTE_JNZ_DONE bound to: 6'b011001 
+	Parameter EXECUTE_MOV_MEM_RHI_RLO_START bound to: 6'b011010 
+	Parameter EXECUTE_MOV_MEM_RHI_RLO_WAIT bound to: 6'b011011 
+	Parameter EXECUTE_MOV_MEM_RHI_RLO_DONE bound to: 6'b011100 
+INFO: [Synth 8-3876] $readmem data file 'D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/8Bit_uC/ROM_DATA.txt' is read successfully [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:105]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier_8Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Multiplier_8Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlPath_Multiplier' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v:23]
+	Parameter S0 bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2 bound to: 3'b010 
+	Parameter S3 bound to: 3'b011 
+	Parameter S4 bound to: 3'b100 
+	Parameter S5 bound to: 3'b101 
+	Parameter S6 bound to: 3'b110 
+	Parameter S7 bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'ControlPath_Multiplier' (1#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Datapath_Multiplier' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Datapath_Multiplier.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LoadAndCountDownRegister_nBit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/LoadAndCountDownRegister_nBit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LoadAndCountDownRegister_nBit' (2#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/LoadAndCountDownRegister_nBit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'NorGate_nBit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/NorGate_nBit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'NorGate_nBit' (3#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/NorGate_nBit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LoadRegister_16Bit_Mul' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/LoadRegister_16Bit_Mul.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LoadRegister_16Bit_Mul' (4#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/LoadRegister_16Bit_Mul.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataSelector_nBit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/DataSelector_nBit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DataSelector_nBit' (5#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/DataSelector_nBit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder_8Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Multiplier/8Bit_Multiplier.srcs/sources_1/new/Adder_8Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder_1Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Multiplier/8Bit_Multiplier.srcs/sources_1/new/Adder_1Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_1Bit' (6#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Multiplier/8Bit_Multiplier.srcs/sources_1/new/Adder_1Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_8Bit' (7#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Multiplier/8Bit_Multiplier.srcs/sources_1/new/Adder_8Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath_Multiplier' (8#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Datapath_Multiplier.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier_8Bit' (9#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Multiplier_8Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Divider_8Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Divider_4Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlPath' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:23]
+	Parameter S0 bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2 bound to: 3'b010 
+	Parameter S3 bound to: 3'b011 
+	Parameter S4 bound to: 3'b100 
+	Parameter S5 bound to: 3'b101 
+	Parameter S6 bound to: 3'b110 
+	Parameter S7 bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'ControlPath' (10#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/DataPath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LoadRegister_4bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/LoadRegister_4bit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'LoadRegister_4bit' (11#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/LoadRegister_4bit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DataSelector_4bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/DataSelector_4bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DataSelector_4bit' (12#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/DataSelector_4bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Comparator_4Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Comparator_4Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator_4Bit' (13#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Comparator_4Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UpCounter_4Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/UpCounter_4Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UpCounter_4Bit' (14#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/UpCounter_4Bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Substractor_4bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Divider/8Bit_Divider.srcs/sources_1/imports/4_Bit_Divider.srcs/sources_1/new/Substractor_4bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Substractor_1Bit' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Divider/8Bit_Divider.srcs/sources_1/imports/4_Bit_Divider.srcs/sources_1/new/Substractor_1Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Substractor_1Bit' (15#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Divider/8Bit_Divider.srcs/sources_1/imports/4_Bit_Divider.srcs/sources_1/new/Substractor_1Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Substractor_4bit' (16#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Divider/8Bit_Divider.srcs/sources_1/imports/4_Bit_Divider.srcs/sources_1/new/Substractor_4bit.v:23]
+WARNING: [Synth 8-7023] instance 'SM0' of module 'Substractor_4bit' has 5 connections declared, but only 4 given [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/DataPath.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (17#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/DataPath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Divider_8Bit' (18#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/Divider_4Bit.v:23]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:335]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:368]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:403]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:436]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:470]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:502]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:535]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:597]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:662]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:687]
+INFO: [Synth 8-226] default block is never used [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:723]
+WARNING: [Synth 8-5788] Register _instructionReg_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:201]
+WARNING: [Synth 8-5788] Register _programCounter_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:202]
+WARNING: [Synth 8-5788] Register _R0_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:203]
+WARNING: [Synth 8-5788] Register _R1_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:204]
+WARNING: [Synth 8-5788] Register _R2_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:205]
+WARNING: [Synth 8-5788] Register _R3_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:206]
+WARNING: [Synth 8-5788] Register _Rhi_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:207]
+WARNING: [Synth 8-5788] Register _Rlo_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:208]
+WARNING: [Synth 8-5788] Register _Rquotient_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:209]
+WARNING: [Synth 8-5788] Register _Rremainder_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:210]
+WARNING: [Synth 8-5788] Register _ramWrite_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:211]
+WARNING: [Synth 8-5788] Register _romAddress_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:106]
+WARNING: [Synth 8-5788] Register _ramAddress_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:135]
+WARNING: [Synth 8-5788] Register _ramDataIn_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:214]
+WARNING: [Synth 8-5788] Register _mul_dataB_uC_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:57]
+WARNING: [Synth 8-5788] Register _mul_dataA_uC_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:56]
+WARNING: [Synth 8-5788] Register _mul_start_uc_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:55]
+WARNING: [Synth 8-5788] Register _div_dataB_uC_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:87]
+WARNING: [Synth 8-5788] Register _div_dataA_uC_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:86]
+WARNING: [Synth 8-5788] Register _div_start_uc_reg in module uC_8Bit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'uC_8Bit' (19#1) [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:23]
+WARNING: [Synth 8-3331] design Datapath_Multiplier has unconnected port _loadA
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 567.453 ; gain = 276.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 567.453 ; gain = 276.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 567.453 ; gain = 276.566
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register '_state_reg' in module 'ControlPath_Multiplier'
+INFO: [Synth 8-802] inferred FSM for state register '_state_reg' in module 'ControlPath'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:368]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:368]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:368]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/new/uC_8Bit.v:368]
+INFO: [Synth 8-5546] ROM "_instructionReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_Rhi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_Rquotient" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_ramWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_romAddress" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_ramAddress" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_ramDataIn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_mul_dataB_uC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_mul_start_uc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_div_dataB_uC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "_div_start_uc" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable '_clear_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v:141]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                           000001 |                              000
+                      S1 |                           000010 |                              001
+                      S2 |                           000100 |                              010
+                      S3 |                           001000 |                              011
+                      S4 |                           010000 |                              100
+                      S5 |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register '_state_reg' using encoding 'one-hot' in module 'ControlPath_Multiplier'
+WARNING: [Synth 8-327] inferring latch for variable '_loadA_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v:143]
+WARNING: [Synth 8-327] inferring latch for variable '_countDown_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v:145]
+WARNING: [Synth 8-327] inferring latch for variable '_loadHoldA_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v:146]
+WARNING: [Synth 8-327] inferring latch for variable '_done_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v:142]
+WARNING: [Synth 8-327] inferring latch for variable '_done_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:49]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                            00001 |                              000
+                      S1 |                            00010 |                              001
+                      S2 |                            00100 |                              010
+                      S3 |                            01000 |                              011
+                      S4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register '_state_reg' using encoding 'one-hot' in module 'ControlPath'
+WARNING: [Synth 8-327] inferring latch for variable '_error_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:50]
+WARNING: [Synth 8-327] inferring latch for variable '_clear_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:54]
+WARNING: [Synth 8-327] inferring latch for variable '_loadA_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:55]
+WARNING: [Synth 8-327] inferring latch for variable '_countUp_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:57]
+WARNING: [Synth 8-327] inferring latch for variable '_loadHoldA_reg' [D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.srcs/sources_1/imports/new/ControlPath.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 728.371 ; gain = 437.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 10    
+	   3 Input      8 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 277   
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 2     
+	  30 Input      8 Bit        Muxes := 6     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	  30 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 295   
+	   4 Input      1 Bit        Muxes := 52    
+	   5 Input      1 Bit        Muxes := 7     
+	  30 Input      1 Bit        Muxes := 19    
+	  16 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uC_8Bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 8     
+	   3 Input      8 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 272   
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	  30 Input      8 Bit        Muxes := 6     
+	  30 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 276   
+	  30 Input      1 Bit        Muxes := 19    
+	  16 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 256   
+Module ControlPath_Multiplier 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 6     
+Module LoadAndCountDownRegister_nBit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module LoadRegister_16Bit_Mul 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module DataSelector_nBit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Adder_1Bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module ControlPath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 7     
+Module LoadRegister_4bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module DataSelector_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module UpCounter_4Bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Substractor_1Bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[14]' (FDCE) to 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[13]' (FDCE) to 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[12]' (FDCE) to 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[11]' (FDCE) to 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[10]' (FDCE) to 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[9]' (FDCE) to 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[8]' (FDCE) to 'MUL80/DPMUL0/LRA/_dataHoldRegister_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MUL80/DPMUL0/LRA/_dataHoldRegister_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\_cycle_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (DIV80/CPM0/_error_reg) is unused and will be removed from module uC_8Bit.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:41 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|uC_8Bit     | p_0_out    | 32x8          | LUT            | 
+|uC_8Bit     | p_0_out    | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:45 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:48 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    21|
+|3     |LUT1   |     1|
+|4     |LUT2   |   136|
+|5     |LUT3   |    58|
+|6     |LUT4   |    74|
+|7     |LUT5   |   164|
+|8     |LUT6   |  1118|
+|9     |MUXF7  |   104|
+|10    |MUXF8  |    52|
+|11    |FDCE   |  2126|
+|12    |FDPE   |     2|
+|13    |FDRE   |   155|
+|14    |LD     |    10|
+|15    |IBUF   |     2|
+|16    |OBUF   |   119|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+------------------------------+------+
+|      |Instance      |Module                        |Cells |
++------+--------------+------------------------------+------+
+|1     |top           |                              |  4143|
+|2     |  DIV80       |Divider_8Bit                  |    97|
+|3     |    CPM0      |ControlPath                   |    20|
+|4     |    DPM0      |DataPath                      |    77|
+|5     |      CM0     |Comparator_4Bit               |     1|
+|6     |      HOLDAM0 |LoadRegister_4bit             |    19|
+|7     |      LRA     |LoadRegister_4bit_1           |    10|
+|8     |      LRB     |LoadRegister_4bit_2           |    28|
+|9     |      UCM0    |UpCounter_4Bit                |    19|
+|10    |  MUL80       |Multiplier_8Bit               |   111|
+|11    |    CPMUL0    |ControlPath_Multiplier        |    39|
+|12    |    DPMUL0    |Datapath_Multiplier           |    72|
+|13    |      LACDRB  |LoadAndCountDownRegister_nBit |    21|
+|14    |      LRA     |LoadRegister_16Bit_Mul        |    24|
+|15    |      LRP     |LoadRegister_16Bit_Mul_0      |    27|
++------+--------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 871.813 ; gain = 580.926
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 187 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'uC_8Bit' is not ideal for floorplanning, since the cellview 'uC_8Bit' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 871.813 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  LD => LDCE: 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:58 . Memory (MB): peak = 871.813 ; gain = 580.926
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 871.813 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/BitBucketLocalRepository/verilog-projects/8_Bit_Processor/8Bit_uC/8Bit_uC.runs/synth_1/uC_8Bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uC_8Bit_utilization_synth.rpt -pb uC_8Bit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 14:50:12 2019...

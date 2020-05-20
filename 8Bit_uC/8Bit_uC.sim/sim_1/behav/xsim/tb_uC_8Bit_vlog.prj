@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Multiplier/8Bit_Multiplier.srcs/sources_1/new/Adder_1Bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Multiplier/8Bit_Multiplier.srcs/sources_1/new/Adder_8Bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/Comparator_4Bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/ControlPath.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/ControlPath_Multiplier.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/DataPath.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/DataSelector_4bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/DataSelector_nBit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/Datapath_Multiplier.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/Divider_4Bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/LoadAndCountDownRegister_nBit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/LoadRegister_16Bit_Mul.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/LoadRegister_4bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/Multiplier_8Bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/NorGate_nBit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Divider/8Bit_Divider.srcs/sources_1/imports/4_Bit_Divider.srcs/sources_1/new/Substractor_1Bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/sources_1/imports/8_Bit_Processor/8Bit_Divider/8Bit_Divider.srcs/sources_1/imports/4_Bit_Divider.srcs/sources_1/new/Substractor_4bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/imports/new/UpCounter_4Bit.v" \
+"../../../../8Bit_uC.srcs/sources_1/new/uC_8Bit.v" \
+"../../../../8Bit_uC.srcs/sim_1/new/tb_uC_8Bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

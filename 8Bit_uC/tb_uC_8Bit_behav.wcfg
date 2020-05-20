@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_uC_8Bit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_uC_8Bit" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="279221000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_uC_8Bit/_clk" type="logic">
+      <obj_property name="ElementShortName">_clk</obj_property>
+      <obj_property name="ObjectShortName">_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_reset" type="logic">
+      <obj_property name="ElementShortName">_reset</obj_property>
+      <obj_property name="ObjectShortName">_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_cycle" type="array">
+      <obj_property name="ElementShortName">_cycle[5:0]</obj_property>
+      <obj_property name="ObjectShortName">_cycle[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_romAddress" type="array">
+      <obj_property name="ElementShortName">_romAddress[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_romAddress[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_instructionReg" type="array">
+      <obj_property name="ElementShortName">_instructionReg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_instructionReg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_romOut" type="array">
+      <obj_property name="ElementShortName">_romOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_romOut[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_programCounter" type="array">
+      <obj_property name="ElementShortName">_programCounter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_programCounter[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_R0" type="array">
+      <obj_property name="ElementShortName">_R0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_R0[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_R1" type="array">
+      <obj_property name="ElementShortName">_R1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_R1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_R2" type="array">
+      <obj_property name="ElementShortName">_R2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_R2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_R3" type="array">
+      <obj_property name="ElementShortName">_R3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_R3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_Rhi" type="array">
+      <obj_property name="ElementShortName">_Rhi[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_Rhi[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_Rlo" type="array">
+      <obj_property name="ElementShortName">_Rlo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_Rlo[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_Rquotient" type="array">
+      <obj_property name="ElementShortName">_Rquotient[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_Rquotient[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_Rremainder" type="array">
+      <obj_property name="ElementShortName">_Rremainder[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_Rremainder[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_ramWrite" type="logic">
+      <obj_property name="ElementShortName">_ramWrite</obj_property>
+      <obj_property name="ObjectShortName">_ramWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_ramAddress" type="array">
+      <obj_property name="ElementShortName">_ramAddress[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_ramAddress[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uC_8Bit/_ramOut" type="array">
+      <obj_property name="ElementShortName">_ramOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">_ramOut[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
